@@ -38,3 +38,8 @@ Operator:      +
 ## Contribution
 Instead of using a scanner for this source code, you could also provide the integers and the operator as command line arguments (String [args]) in form of <n1> <operator> <n2>.
 
+# List of exercises
+[Exercise 1 - Creating and converting markdown files](exercise1.md)
+Exercise 1 focuses on creating two markdown files. One is called "README", which describes a calculator and the other file is called "exercise1", which is converted into pdf and html.
+[Exercise 2 - Git Commands](exercise2.md)
+Exercise 2 focuses on learning and documenting key Git commands, understanding their functionality, and practicing using Git workflows.
