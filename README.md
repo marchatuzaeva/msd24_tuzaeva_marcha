@@ -43,6 +43,9 @@ Instead of using a scanner for this source code, you could also provide the inte
 Exercise 1 focuses on creating two markdown files. One is called "README", which describes a calculator and the other file is called "exercise1", which is converted into pdf and html.
 [Exercise 2 - Git Commands](exercise2.md)
 Exercise 2 focuses on learning and documenting key Git commands, understanding their functionality, and practicing using Git workflows.
+[Exercise 3 - Maven-based Java project](exercise3.md)
+Exercise 3 focuses on creating and structuring a Maven-based Java project, implementing calculator functionalities, and documenting the process using Git version control.
+
 
 # Information author
 * [Github profile](https://github.com/marchatuzaeva/msd24_tuzaeva_marcha)
