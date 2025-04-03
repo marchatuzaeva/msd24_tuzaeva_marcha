@@ -8,3 +8,6 @@ Lastly, the multiplication methods cover typical scenarios. testMultiplyByNormal
 
 
 ![Ex4_1](resources/images/ex4_1.png)
+
+![Ex4_2](resources/images/ex4_2.png)
+Failed Execution of factorial method
