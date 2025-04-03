@@ -45,6 +45,8 @@ Exercise 1 focuses on creating two markdown files. One is called "README", which
 Exercise 2 focuses on learning and documenting key Git commands, understanding their functionality, and practicing using Git workflows.
 [Exercise 3 - Maven-based Java project](exercise3.md)
 Exercise 3 focuses on creating and structuring a Maven-based Java project, implementing calculator functionalities, and documenting the process using Git version control.
+[Exercise 4 - JUnit](exercise4.md)
+Implementing and testing calculator methods
 
 
 # Information author
