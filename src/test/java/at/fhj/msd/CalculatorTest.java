@@ -95,7 +95,7 @@ public class CalculatorTest {
     @Test
     void testFactorialNormal() {
 
-        assertEquals(1, calculator.factorial(5));
+        assertEquals(120, calculator.factorial(5));
     }
 
     @Test
@@ -103,4 +103,5 @@ public class CalculatorTest {
 
         assertEquals(0, calculator.factorial(-5));
     }
+
 }
