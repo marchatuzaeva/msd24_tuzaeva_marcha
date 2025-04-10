@@ -47,6 +47,11 @@ Exercise 2 focuses on learning and documenting key Git commands, understanding t
 Exercise 3 focuses on creating and structuring a Maven-based Java project, implementing calculator functionalities, and documenting the process using Git version control.
 [Exercise 4 - JUnit](exercise4.md)
 Implementing and testing calculator methods
+[Exercise 5 - Branches](exercise5.md)
+
+
+## Templates
+[log4j2.xml.template](src/main/resources/log4j2.xml.template)
 
 
 # Information author

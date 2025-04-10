@@ -6,16 +6,15 @@
 <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
 </Console>
 <!-- Logdatei-Ausgabe -->
-<File name="FileLogger" fileName="${logfile.path}/app.log" append="true">
+<File name="FileLogger" fileName="logs/myapp.log" append="true">
 <PatternLayout>
 <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %c{1} - %msg%n</pattern>
 </PatternLayout>
 </File>
 </Appenders>
- 
-  <Loggers>
+<Loggers>
 <!-- Root Logger -->
-<Root level="${log.level}">
+<Root level="debug">
 <AppenderRef ref="Console"/>
 <AppenderRef ref="FileLogger"/>
 </Root>

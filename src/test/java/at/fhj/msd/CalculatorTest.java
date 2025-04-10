@@ -1,6 +1,7 @@
 package at.fhj.msd;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.BeforeEach;
 
 import org.junit.jupiter.api.Test;
@@ -38,9 +39,11 @@ public class CalculatorTest {
     }
 
     @Test
-    void testDivideByZero() {
-
-        assertEquals(Double.NEGATIVE_INFINITY, calculator.divide(-10, 0.0));
+    public void exceptionTest() {
+        ArithmeticException exception = assertThrows(ArithmeticException.class, () -> {
+            calculator.divide(4, 0);
+        });
+        assertEquals("Cannot divide by zero", exception.getMessage());
     }
 
     @Test

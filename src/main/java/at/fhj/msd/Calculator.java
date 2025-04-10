@@ -14,7 +14,7 @@ public class Calculator {
     public double divide(double a, double b) {
         logger.debug("divide() called with parameters: a={}, b={}", a, b);
         if (b == 0) {
-            logger.error("Division by zero attempted! Parameters: a={}, b={}", a, b);
+            logger.debug("Division by zero attempted! Parameters: a={}, b={}", a, b);
             throw new ArithmeticException("Cannot divide by zero");
         }
         return a / b;
@@ -32,7 +32,7 @@ public class Calculator {
 
     public int factorial(int n) {
         if (n < 0) {
-            logger.error("Invalid input for factorial: n cannot be negative");
+            logger.debug("Invalid input for factorial: n cannot be negative");
             throw new IllegalArgumentException("n darf nicht negativ sein.");
         }
         int result = 1;
