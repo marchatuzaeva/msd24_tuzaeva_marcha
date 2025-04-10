@@ -1,14 +1,15 @@
 package at.fhj.msd;
 
-public class Main {
-    public static void main(String[] args) {
-        CalculatorImpl calculator = new CalculatorImpl();
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-        System.out.println("Addition: " + calculator.add(10, 5));
-        System.out.println("Subtraction: " + calculator.minus(10, 5));
-        System.out.println("Multiplication: " + calculator.multiply(10, 5));
-        System.out.println("Division: " + calculator.divide(10, 5));
-        System.out.println("Your Name: Marcha Tuzaeva");
+public class Main {
+
+    private static final Logger logger = LogManager.getLogger(Main.class);
+
+    public static void main(String[] args) {
+
+        logger.info("Application started.");
+        logger.error("This is a simulated error message.");
     }
 }
-
