@@ -4,4 +4,7 @@
 /target
 .idea
 .vscode
-
+logs/
+logs/*.log
+*.log
+src/main/resources/log4j2.xml
