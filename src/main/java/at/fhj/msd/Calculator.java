@@ -1,46 +1,64 @@
-package at.fhj.msd;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
+/**
+ * Represents a calculator with basic arithmetic operations.
+ * Includes attributes for operands and methods for calculations.
+ */
 public class Calculator {
-    private static final Logger logger = LogManager.getLogger(Calculator.class);
 
-    public double add(double a, double b) {
-        logger.debug("add() called with parameters: a={}, b={}", a, b);
+    /**
+     * Stores the first number for calculations.
+     */
+    private int number1;
+
+    /**
+     * Stores the second number for calculations.
+     */
+    private int number2;
+
+    /**
+     * Adds two numbers together.
+     * 
+     * @param a the first number
+     * @param b the second number
+     * @return the sum of a and b
+     */
+    public int add(int a, int b) {
         return a + b;
     }
 
-    public double divide(double a, double b) {
-        logger.debug("divide() called with parameters: a={}, b={}", a, b);
-        if (b == 0) {
-            logger.debug("Division by zero attempted! Parameters: a={}, b={}", a, b);
-            throw new ArithmeticException("Cannot divide by zero");
-        }
-        return a / b;
-    }
-
-    public double minus(double a, double b) {
-        logger.debug("minus() called with parameters: a={}, b={}", a, b);
+    /**
+     * Subtracts one number from another.
+     * 
+     * @param a the first number
+     * @param b the number to subtract from the first number
+     * @return the difference between a and b
+     */
+    public int subtract(int a, int b) {
         return a - b;
     }
 
-    public double multiply(double a, double b) {
-        logger.debug("multiply() called with parameters: a={}, b={}", a, b);
+    /**
+     * Multiplies two numbers.
+     * 
+     * @param a the first number
+     * @param b the second number
+     * @return the product of a and b
+     */
+    public int multiply(int a, int b) {
         return a * b;
     }
 
-    public int factorial(int n) {
-        if (n < 0) {
-            logger.debug("Invalid input for factorial: n cannot be negative");
-            throw new IllegalArgumentException("n darf nicht negativ sein.");
+    /**
+     * Divides one number by another.
+     * 
+     * @param a the dividend
+     * @param b the divisor
+     * @return the quotient of a divided by b
+     * @throws ArithmeticException if b is zero
+     */
+    public int divide(int a, int b) throws ArithmeticException {
+        if (b == 0) {
+            throw new ArithmeticException("Cannot divide by zero.");
         }
-        int result = 1;
-        for (int i = 2; i <= n; i++) {
-            result *= i;
-        }
-        logger.info("factorial called with: n=" + n + ", result=" + result);
-        return result;
+        return a / b;
     }
-
 }
