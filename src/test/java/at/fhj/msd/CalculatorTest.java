@@ -36,6 +36,7 @@ public class CalculatorTest {
     void testDivideNormalValues() {
 
         assertEquals(5, calculator.divide(10, 2));
+
     }
 
     @Test
@@ -43,7 +44,7 @@ public class CalculatorTest {
         ArithmeticException exception = assertThrows(ArithmeticException.class, () -> {
             calculator.divide(4, 0);
         });
-        assertEquals("Cannot divide by zero", exception.getMessage());
+        assertEquals("Cannot divide by zero.", exception.getMessage());
     }
 
     @Test
@@ -103,8 +104,10 @@ public class CalculatorTest {
 
     @Test
     void testFactorialNegative() {
-
-        assertEquals(0, calculator.factorial(-5));
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
+            calculator.factorial(-5);
+        });
+        assertEquals("Number must be non-negative.", exception.getMessage());
     }
 
 }
