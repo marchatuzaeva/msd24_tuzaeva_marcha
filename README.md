@@ -48,6 +48,9 @@ Exercise 3 focuses on creating and structuring a Maven-based Java project, imple
 [Exercise 4 - JUnit](exercise4.md)
 Implementing and testing calculator methods
 [Exercise 5 - Branches](exercise5.md)
+This exercise focuses on learning about branches
+[Exercise 6 - Javadoc](exercise6.md)
+This exercise focuses maven site documentation and javadoc comments
 
 
 ## Templates
